@@ -1,3 +1,19 @@
 # 笔记：设计模式与UML
-- UML
-- 设计模式
+- [UML](UML.md)
+  - [EAExample](UML课件/EAExample.pdf)
+  - [U1 软件开发与建模](UML课件/U1%20软件开发与建模.pdf)
+  - [U2 UML概览](UML课件/U2%20UML概览.pdf)
+  - [U3 对象模型](UML课件/U3%20对象模型.pdf)
+  - [U4 类图和对象图](UML课件/U4%20类图和对象图.pdf)
+  - [U5 用例图](UML课件/U5%20用例图.pdf)
+  - [U6 活动图](UML课件/U6%20活动图.pdf)
+  - [U7 交互图](UML课件/U7%20交互图.pdf)
+  - [U8 状态机图](UML课件/U8%20状态机图.pdf)
+  - [U9 组合结构和构件图](UML课件/U9%20组合结构和构件图.pdf)
+  - [U10 包图和部署图](UML课件/U10%20包图和部署图.pdf)
+  - [UML Notation Summary](UML课件/UML%20Notation%20Summary.pptx)
+- [设计模式](https://refactoringguru.cn/design-patterns)
+  - [DP1 设计模式概述](设计模式课件/DP1%20设计模式概述.pdf)
+  - [DP2 创建型模式](设计模式课件/DP2%20创建型模式.pdf)
+  - [DP3 结构型模式](设计模式课件/DP3%20结构型模式.pdf)
+  - [DP4 行为模式](设计模式课件/DP4%20行为模式.pdf)
