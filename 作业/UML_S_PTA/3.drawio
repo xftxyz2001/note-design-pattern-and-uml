@@ -1,0 +1,138 @@
+<mxfile host="65bd71144e">
+    <diagram id="YxQW-7k03kfsDE8h0tES" name="第 1 页">
+        <mxGraphModel dx="703" dy="323" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-weight: normal; font-size: 18px; line-height: 24px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;下面描述自动取款机(ATM)的行为。生成一个描述其行为的状态图。列出由于描述不明确、不清晰或不完整而产生的任何假设。用户在自动柜员机上输入银行卡开始交易。假设该卡可被机器读取，用户将被提示输入他们的个人识别号码(PIN)。一旦输入了这个数字，用户就会看到一个菜单，其中包含以下选项:显示账户余额、有收据提款或无收据提款。如果用户选择了其中一个提款选项，系统会提示他们输入要提款的金额;输入的金额必须是10的倍数。当ATM将交易的详细信息发送到银行的远程计算机时，对用户的PIN进行验证。如果PIN无效，则向用户提供重新输入它的选项，并重试所选事务。如果新的PIN也是无效的，则重复此操作。一旦输入了三个无效的pin，交易就会终止，用户的卡片将被机器保留。如果输入了有效的PIN，则进一步的处理取决于所选的事务类型。对于“显示余额”交易，余额显示在屏幕上，确认后，用户返回到交易菜单。如果用户已经超过了可以从帐户中提取的金额，取款交易可能会失败;在这种情况下，将显示一条错误消息，在确认之后，将用户返回到事务菜单。否则，将退还用户卡并发放现金，如果需要的话，还会附上收据。在任何需要用户输入(而不是简单的确认)的地方，都会提供一个“取消”选项。如果选择此选项，则返回用户的卡片，并终止与ATM的交互。&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry width="820" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="登陆成功" style="edgeStyle=none;html=1;" edge="1" parent="1" source="4" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="提示输入PIN" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="370" width="140" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="显示账户余额" style="edgeStyle=none;html=1;" edge="1" parent="1" source="13" target="48">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="提款" style="edgeStyle=none;html=1;" edge="1" parent="1" source="13" target="55">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" style="edgeStyle=none;html=1;" edge="1" parent="1" source="13" target="39">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="菜单" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="518" width="140" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="输入错误" style="edgeStyle=none;html=1;" edge="1" parent="1" source="28" target="39">
+                    <mxGeometry x="0.1935" relative="1" as="geometry">
+                        <mxPoint x="430.1741584917527" y="972.7208721905024" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" value="验证成功" style="edgeStyle=none;html=1;" edge="1" parent="1" source="25" target="49">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="验证成功" style="edgeStyle=none;html=1;" edge="1" parent="1" source="25" target="56">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="取消" style="edgeStyle=none;html=1;" edge="1" parent="1" source="25" target="79">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="PIN校验" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="750" width="216" height="355" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="输入错误" style="edgeStyle=none;html=1;" edge="1" parent="1" source="26" target="27">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="第一次输入PIN" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="66" y="805" width="140" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="输入错误" style="edgeStyle=none;html=1;" edge="1" parent="1" source="27" target="28">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="第二次输入PIN" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="66" y="915" width="140" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="第三次输入PIN" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="66" y="1015" width="140" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=none;html=1;" edge="1" parent="1" source="39" target="42">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="交易结束" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="1105" width="140" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="1116" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" style="edgeStyle=none;html=1;" edge="1" parent="1" source="48" target="26">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="&lt;span&gt;显示账户余额&lt;/span&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="311" width="250" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="PIN验证" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="544" y="351" width="140" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="返回菜单" style="edgeStyle=none;html=1;entryX=1.008;entryY=0.381;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="49" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="显示余额" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="544" y="431" width="140" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="取消" style="edgeStyle=none;html=1;" edge="1" parent="1" source="54" target="79">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="提款" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="540" width="290" height="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" style="edgeStyle=none;html=1;" edge="1" parent="1" source="55" target="26">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="PIN验证" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="580" y="570" width="140" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="余额充足" style="edgeStyle=none;html=1;" edge="1" parent="1" source="56" target="62">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="余额不足" style="edgeStyle=none;html=1;" edge="1" parent="1" source="56" target="71">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="输入金额" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="720" width="140" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="无收据提款" style="edgeStyle=none;html=1;" edge="1" parent="1" source="62" target="13">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="160" y="560" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="76" value="有收据提款" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="62" target="74">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="吐出金额" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="810" width="140" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" style="edgeStyle=none;html=1;" edge="1" parent="1" source="71" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="提示用户余额不足" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="637" width="140" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" style="edgeStyle=none;html=1;" edge="1" parent="1" source="74" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="打印收据" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="930" width="140" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" style="edgeStyle=none;html=1;" edge="1" parent="1" source="79" target="39">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="退还卡片" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="1040" width="140" height="52" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
