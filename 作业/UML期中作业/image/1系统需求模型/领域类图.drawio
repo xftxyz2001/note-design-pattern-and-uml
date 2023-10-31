@@ -1,0 +1,94 @@
+<mxfile host="65bd71144e">
+    <diagram id="lsgVAZdRoAWzo2tDKZ4Q" name="第 1 页">
+        <mxGraphModel dx="492" dy="226" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="图书管理系统" style="shape=umlFrame;whiteSpace=wrap;html=1;width=110;height=30;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="90" width="240" height="670" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="图书馆" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="275" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="9" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="9" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="9" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="9" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="9" target="20">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="9" target="21">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="读者" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="200" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="10" target="22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="10" target="28">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="10" target="29">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="10" target="30">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="10" target="30">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="10" target="27">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="管理员" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="525" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="读者注册" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="110" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="读者登录" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="180" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="办理借阅证" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="380" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="借阅图书" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="240" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="归还图书" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="300" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="网上预订" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="390" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="书籍维护" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="450" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="处理借书" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="520" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="处理还书" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="580" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="读者管理" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="640" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="图书管理" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="700" width="110" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
